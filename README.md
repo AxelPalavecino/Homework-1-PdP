@@ -5,6 +5,22 @@
 
 ---
 
+## Indice 
+
+<div style="text-align: right; position: absolute; top: 20px; right: 20px;">
+    <img src="udesa.logo.jpg" alt="UDESA Logo" width="150">
+</div>
+
+- [Ejercicio 1: Matrices](#ejercicio-1-matrices)
+- [Ejercicio 2: Sistema de Log](#ejercicio-2-sistema-de-log)
+- [Ejercicio 3: Listas Enlazadas](#ejercicio-3-listas-enlazadas)
+- [Ejercicio 4: Comparación de strings y tiempo de ejecución/compilación](#ejercicio-4-comparación-de-strings-y-tiempo-de-ejecución-compilación)
+
+---
+
+
+---
+
 ## Ejercicio 1: Matrices
 
 En este ejercicio se implementa un programa en C++ que crea, llena e imprime una matriz cuadrada de enteros. Se hacen uso de punteros y memoria dinamica. 
