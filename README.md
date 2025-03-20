@@ -15,15 +15,15 @@ El programa crea matrices cuadradas de diferentes tamaños, las llena con valore
     - Reserva memoria dinámicamente
     - Retorna un puntero a la matriz creada
 
-2. **fillMatrix(int** matrix, int n)**:
+2. **fillMatrix(int**** **matrix, int n)**:
     - Llena la matriz con números enteros consecutivos empezando en 1
     - Asigna los valores incrementalmente recorriendo fila por fila
 
-3. **printMatrix(int** matrix, int n)**:
+3. **printMatrix(int**** **matrix, int n)**:
     - Imprime la matriz en orden inverso (desde la esquina inferior derecha)
     - Muestra cada elemento con formato "M_n[i][j] = valor"
 
-4. **deleteMatrix(int** matrix, int n)**:
+4. **deleteMatrix(int**** **matrix, int n)**:
     - Libera la memoria asignada a la matriz
     - Evita fugas de memoria
 
@@ -67,6 +67,10 @@ Para ejecutar:
 - **Matrices.cpp**: Implementa las funciones declaradas en el header (Matrices.h)
 - **main.cpp**: Contiene la función principal que ejecuta los casos de prueba 
 
+---
+
+
+---
 
 ## Ejercicio 2: Sistema de Log
 
@@ -169,3 +173,108 @@ logMessage("Aplicación iniciada correctamente", static_cast<int>(Importance::IN
 ```
 
 El archivo de log resultante mostrará un historial cronológico de todos los eventos registrados, facilitando la depuración y el seguimiento de la actividad del programa. Es bastante utilizado en aplicaciones web, sistemas embebidos, etc. para monitorear el comportamiento del sistema.
+
+--- 
+
+
+---
+
+## Ejercicio 3: Listas Enlazadas
+
+Se implementa un lista simplemente enlazada en C++, es decir, el tipo mas basico de lista enlazada, utilizando punteros inteligentes (smart pointers).
+
+### Descripción
+
+En este ejercicio se implementa una lista enlazada simple en C++ utilizando punteros inteligentes (smart pointers). La lista permite almacenar valores enteros y realizar diversas operaciones como inserción y eliminación de elementos en diferentes posiciones. El uso de `shared_ptr` facilita la gestión automática de memoria y evita **fugas de memoria**.
+
+### Funciones Principales
+
+1. **create_node(int value)**:
+    - Crea un nuevo nodo con el valor especificado
+    - Retorna un `shared_ptr<node>` que apunta al nodo creado
+
+2. **push_front(shared_ptr<node> &head, int value)**:
+    - Agrega un nuevo nodo con el valor especificado al inicio de la lista
+    - Actualiza el puntero head para que apunte al nuevo nodo
+
+3. **push_back(shared_ptr<node> &head, int value)**:
+    - Agrega un nuevo nodo con el valor especificado al final de la lista
+    - Recorre la lista hasta el último nodo y enlaza el nuevo nodo
+
+4. **insert(shared_ptr<node> &head, int value, int position)**:
+    - Inserta un nuevo nodo con el valor especificado en la posición indicada
+    - Si la posición es 0, inserta al inicio (equivalente a push_front)
+    - Si la posición es mayor que el tamaño de la lista, inserta al final
+
+5. **erase(shared_ptr<node> &head, int position)**:
+    - Elimina el nodo en la posición especificada
+    - Si la posición es 0, elimina el primer nodo y actualiza head
+    - Si la posición es mayor que el tamaño de la lista, elimina el último nodo
+
+6. **print_list(shared_ptr<node> head)**:
+    - Recorre la lista e imprime los valores de cada nodo
+    - Muestra los nodos conectados con el formato "valor->valor->valor"
+
+### Casos de Prueba
+
+El programa incluye tres funciones de prueba que verifican diferentes aspectos de la implementación:
+
+- **test_code1()**: Prueba básica de todas las operaciones de la lista
+  - Agrega elementos al inicio con push_front
+  - Agrega elementos al final con push_back
+  - Inserta elementos en posiciones específicas
+  - Elimina elementos en posiciones específicas
+  - Vacía completamente la lista
+
+- **test_code2()**: Prueba operaciones con una lista inicialmente vacía
+  - Demuestra cómo construir una lista desde cero
+  - Combina push_back y push_front para crear una lista con valores ordenados
+  - Prueba inserción en diferentes posiciones
+  - Prueba eliminación en diferentes posiciones
+
+- **test_code3()**: Prueba casos especiales y comportamiento en bordes
+  - Trabaja con una lista vacía
+  - Maneja inserción en posiciones fuera de rango
+  - Combina diferentes operaciones en secuencia
+  - Prueba eliminación de elementos en distintas posiciones
+
+### Compilación y Ejecución
+
+Para compilar el programa:
+```bash
+g++ main.cpp lista_enlazada.cpp -std=c++20 -o lista_enlazada
+```
+
+Para compilar con información de depuración:
+```bash
+g++ main.cpp lista_enlazada.cpp -std=c++20 -g -o lista_enlazada
+```
+
+Para ejecutar con Valgrind para detección de fugas de memoria:
+```bash
+valgrind --leak-check=full ./lista_enlazada
+```
+
+Para un análisis minucioso de memoria con Valgrind:
+```bash
+valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --track-origins=yes ./lista_enlazada
+```
+
+Para ejecutar normalmente:
+```bash
+./lista_enlazada
+```
+
+### Estructura del Proyecto
+
+- **lista_enlazada.h**: Contiene la definición de la estructura del nodo y las declaraciones de las funciones
+- **lista_enlazada.cpp**: Implementa las funciones declaradas en el header
+- **main.cpp**: Contiene la función principal que ejecuta los casos de prueba
+
+--- 
+
+
+---
+
+## Ejercicio 4: Comparación de strings y tiempo de ejecución/compilación 
+
