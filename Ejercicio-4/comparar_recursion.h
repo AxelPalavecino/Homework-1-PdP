@@ -38,3 +38,7 @@ int test_code_ejecution();
 /// @brief  Función que ejecuta el código de prueba y repite 10000 veces el chequeo de que comparacion es mas rapida de un codigo en tiempo de compilación.
 /// @return int 
 int test_code_compile_time();
+
+/// @brief Función que ejecuta el código de prueba y compara dos strings.
+/// @return void
+void test_comparate();

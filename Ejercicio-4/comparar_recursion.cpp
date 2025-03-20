@@ -200,3 +200,14 @@ int test_code_compile_time() {
     cout << "Es de esperar que el tipo mas eficiente de dato para este caso sea char* porque tiene un acceso directo a memoria" << endl;
     return 0;
 }
+
+void test_comparate() {
+    string str1 = "Holaaaa";
+    string str2 = "Hola";
+
+    if (compare_recursive_string1(str1, str2)) {
+        cout << "Las cadenas son iguales" << endl;
+    } else {
+        cout << "Las cadenas son diferentes" << endl;
+    }
+}
