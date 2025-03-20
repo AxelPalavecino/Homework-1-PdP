@@ -27,7 +27,7 @@
                 <a href="#ejercicio-3-listas-enlazadas">🔗 Ejercicio 3: Listas Enlazadas</a>
             </td>
             <td>
-                <a href="#ejercicio-4-comparación-de-strings-y-tiempo-de-ejecución-compilación">⏱️ Ejercicio 4: Comparación de strings</a>
+                <a href="#ejercicio-4-comparación-de-strings-y-tiempo-de-ejecución-o-compilación">⏱️ Ejercicio 4: Comparación de strings</a>
             </td>
         </tr>
     </table>
@@ -314,7 +314,7 @@ Para ejecutar normalmente:
 
 ---
 
-## Ejercicio 4: Comparación de strings y tiempo de ejecución/compilación 
+## Ejercicio 4: Comparación de strings y tiempo de ejecución o compilación 
 
 Se implementa un programa en C++ que compara la eficiencia de comparar cadenas de texto de forma recursiva, utilizando diferentes tipo de datos para obtener el mejor rendimiento.
 
