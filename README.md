@@ -3,7 +3,6 @@
 <div align="center">
     <hr style="height: 2px; background-color: #0066cc; width: 80%;">
     <h2>🔷 Paradigmas de Programación 🔷</h2>
-    <hr>
     <p><em>Universidad de San Andrés - 2025</em></p>
     <hr style="height: 2px; background-color: #0066cc; width: 80%;">
 </div>
