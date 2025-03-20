@@ -37,7 +37,7 @@ void printMatrix(int** matrix, int n) {
     }
 }
 
-void test_code() {
+void test_code1M() {
     int n = 5;
     int ** matrix = createMatrix(n);
     fillMatrix(matrix, n);

@@ -7,7 +7,7 @@ int main() {
     cout << "----------------------------------" << endl;
     cout << "Test 1 - Matriz 5x5" << endl << endl;
 
-    test_code();
+    test_code1M();
 
     cout << "----------------------------------" << endl;
     cout << endl << "Test 2 - Matriz 10x10" << endl << endl;

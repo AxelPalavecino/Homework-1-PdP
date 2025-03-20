@@ -21,7 +21,7 @@ void fillMatrix(int** matrix, int n);
 void printMatrix(int** matrix, int n);
 
 /// @brief Función que prueba la funcionalidad de las funciones de matrices
-void test_code();
+void test_code1M();
 
 /// @brief Función que prueba la funcionalidad de las funciones de matrices
 void test_code2();

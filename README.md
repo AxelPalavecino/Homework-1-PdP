@@ -183,7 +183,7 @@ Para ejecutar:
 ./sistema_log
 ```
 
-### Estructura del Proyecto
+### Estructura del Ejercicio
 
 - **sistema_log.h**: Contiene las declaraciones de las funciones de logging
 - **sistema_log.cpp**: Implementa las funciones declaradas en el header
@@ -305,7 +305,7 @@ Para ejecutar normalmente:
 ./lista_enlazada
 ```
 
-### Estructura del Proyecto
+### Estructura del Ejercicio
 
 - **lista_enlazada.h**: Contiene la definición de la estructura del nodo y las declaraciones de las funciones
 - **lista_enlazada.cpp**: Implementa las funciones declaradas en el header
@@ -392,7 +392,7 @@ El ejercicio demuestra las diferencias de rendimiento entre:
 
 La expectativa teórica es que los char* sean más eficientes debido a su acceso directo a memoria, sin la sobrecarga de las funciones miembro y estructuras de datos de string. El programa verifica empíricamente si esta hipótesis se cumple en la práctica.
 
-### Estructura del Proyecto
+### Estructura del Ejercicio
 
 - **comparar_recursion.h**: Contiene las declaraciones de funciones y prototipos
 - **comparar_recursion.cpp**: Implementa las funciones de comparación y pruebas

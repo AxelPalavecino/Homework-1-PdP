@@ -69,19 +69,18 @@ int test_code_ejecution() {
     int string_faster_count = 0;
     
     for (int i = 0; i < 10000; i++) {
-        // Comparar tiempo de ejecucion de funcion recursiva con string
+        // Comparar strings
         auto startTimeStr = chrono::high_resolution_clock::now();
         bool resultStr = compare_recursive_string1(str1, str2);
         auto endTimeStr = chrono::high_resolution_clock::now();
         auto elapsedTimeStr = chrono::duration_cast<chrono::nanoseconds>(endTimeStr - startTimeStr).count();
         
-        // Comparar tiempo de ejecucion de los valores char* 
+        // Comparar char* 
         auto startTimeChar = chrono::high_resolution_clock::now();
         bool resultChar = compare_recursive_string2(str3, str4);
         auto endTimeChar = chrono::high_resolution_clock::now();
         auto elapsedTimeChar = chrono::duration_cast<chrono::nanoseconds>(endTimeChar - startTimeChar).count();
         
-        // Comparar tiempo de ejecucion 
         if (elapsedTimeChar < elapsedTimeStr) {
             char_faster_count++;
         } else if (elapsedTimeStr < elapsedTimeChar) {
@@ -89,7 +88,6 @@ int test_code_ejecution() {
         }
     }
     
-    // Mostrar resultados
     cout << "Comparacion de 10000 intentos:" << endl;
     cout << "char* comparaciones fueron mas rapidas: " << char_faster_count << " veces" << endl;
     cout << "string comparaciones fueron mas rapidas: " << string_faster_count << " veces" << endl;
@@ -100,8 +98,7 @@ int test_code_ejecution() {
     } else {
         cout << "Result: char* y string comparaciones son generalmente igual de rapidas" << endl;
     }
-    
-    // Ejecución de muestra para tiempos reales
+
     auto startTime = chrono::high_resolution_clock::now();
     cout << "Resultado de comparación de string de muestra: " << compare_recursive_string1(str1, str2) << endl;
     auto endTime = chrono::high_resolution_clock::now();
@@ -176,7 +173,6 @@ int test_code_compile_time() {
         cout << "Resultado: char* y string comparaciones son generalmente igual de rapidas" << endl;
     }
     
-    // Ejemplos de ejecucion en tiempo real
     auto startTime = chrono::high_resolution_clock::now();
     bool result = compare_strings1(test_char1, test_char2);
     auto endTime = chrono::high_resolution_clock::now();

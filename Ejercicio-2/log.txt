@@ -1,0 +1,14 @@
+[ERROR]std::bad_array_new_length | File: Matrices.h | Line: 10
+[ERROR]El puntero de la matriz es nulo. No se puede llenar la matriz. | File: Matrices.cpp | Line: 20
+[ERROR]Se detecto division por cero | File: sistema_log.cpp | Line: 30
+[ERROR]Acceso inválido a memoria | File: sistema_log.cpp | Line: 40
+[ERROR] Error en la conversion de cadena
+[ERROR]Error personalizado detectado | File: archivo_desconocido.cpp | Line: 120
+[SECURITY]Intento de accion no autorizada | User: Admin Granted
+[SECURITY]Intento de accion no autorizada | User: Admin Denied
+[SECURITY]Intento de intervension | User: Admin Denied
+[DEBUG] Este es un mensaje de depuracion
+[INFO] Este es un mensaje de informacion
+[WARNING] Este es un mensaje de advertencia
+[ERROR] Este es un mensaje de error
+[CRITICAL] Este es un mensaje crítico
