@@ -7,14 +7,31 @@
 
 ## Indice 
 
-<div style="text-align: right; position: absolute; top: 20px; right: 20px;">
+<div align="center">
     <img src="udesa-logo.jpg" alt="UDESA Logo" width="150">
+    <h1>Índice de Contenidos</h1>
 </div>
 
-- [Ejercicio 1: Matrices](#ejercicio-1-matrices)
-- [Ejercicio 2: Sistema de Log](#ejercicio-2-sistema-de-log)
-- [Ejercicio 3: Listas Enlazadas](#ejercicio-3-listas-enlazadas)
-- [Ejercicio 4: Comparación de strings y tiempo de ejecución/compilación](#ejercicio-4-comparación-de-strings-y-tiempo-de-ejecución-compilación)
+<div align="center">
+    <table>
+        <tr>
+            <td>
+                <a href="#ejercicio-1-matrices">📊 Ejercicio 1: Matrices</a>
+            </td>
+            <td>
+                <a href="#ejercicio-2-sistema-de-log">📝 Ejercicio 2: Sistema de Log</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#ejercicio-3-listas-enlazadas">🔗 Ejercicio 3: Listas Enlazadas</a>
+            </td>
+            <td>
+                <a href="#ejercicio-4-comparación-de-strings-y-tiempo-de-ejecución-compilación">⏱️ Ejercicio 4: Comparación de strings</a>
+            </td>
+        </tr>
+    </table>
+</div>
 
 ---
 
