@@ -1,5 +1,10 @@
 # Homework-1-PdP
 
+---
+
+
+---
+
 ## Ejercicio 1: Matrices
 
 En este ejercicio se implementa un programa en C++ que crea, llena e imprime una matriz cuadrada de enteros. Se hacen uso de punteros y memoria dinamica. 
@@ -278,3 +283,82 @@ Para ejecutar normalmente:
 
 ## Ejercicio 4: Comparación de strings y tiempo de ejecución/compilación 
 
+Se implementa un programa en C++ que compara la eficiencia de comparar cadenas de texto de forma recursiva, utilizando diferentes tipo de datos para obtener el mejor rendimiento.
+
+### Descripción
+
+En este ejercicio se implementa un programa en C++ que compara dos cadenas de texto (strings) de forma recursiva, utilizando diferentes representaciones (string y char*) y midiendo los tiempos de ejecución y compilación de cada enfoque. El objetivo es analizar las diferencias de rendimiento entre distintas implementaciones de comparación de strings y entre procesamiento en tiempo de ejecución versus tiempo de compilación.
+
+### Funciones Principales
+
+1. **compare_recursive_string1(const string &str1, const string &str2, size_t index)**:
+    - Compara dos objetos string de forma recursiva
+    - Verifica primero si los tamaños son iguales
+    - Compara carácter por carácter recursivamente hasta llegar al final
+    - Utilizada en tiempo de ejecución
+
+2. **compare_recursive_string2(const char *str1, const char *str2, size_t index)**:
+    - Compara dos cadenas de estilo C (char*) de forma recursiva
+    - Verifica recursivamente cada carácter hasta encontrar el terminador '\0'
+    - Utilizada en tiempo de ejecución
+
+3. **compare_strings1(const char *str1, const char *str2, size_t index)**:
+    - Versión constexpr (evaluable en tiempo de compilación) para comparar cadenas char*
+    - Permite que la comparación se realice durante la compilación si los argumentos son constantes
+
+4. **compare_strings2(const string &str1, const string &str2, size_t index)**:
+    - Versión constexpr para comparar objetos string
+    - Permite que la comparación se realice durante la compilación si los argumentos son constantes
+
+### Casos de Prueba
+
+El programa incluye dos funciones principales de prueba:
+
+1. **test_code_ejecution()**:
+    - Compara el rendimiento en tiempo de ejecución entre string y char*
+    - Ejecuta 10,000 iteraciones de comparación con ambos métodos
+    - Registra qué implementación es más rápida en cada iteración
+    - Muestra estadísticas sobre cuál método fue más eficiente
+
+2. **test_code_compile_time()**:
+    - Evalúa el rendimiento de las funciones constexpr (tiempo de compilación)
+    - También ejecuta 10,000 iteraciones para obtener resultados estadísticos
+    - Compara la eficiencia de las implementaciones string vs char*
+    - Muestra qué método tuvo mejor rendimiento
+
+### Compilación y Ejecución
+
+Para compilar el programa:
+```bash
+g++ main.cpp comparar_recursion.cpp -std=c++20 -o comparar_strings
+```
+
+Para compilar con información de depuración:
+```bash
+g++ main.cpp comparar_recursion.cpp -std=c++20 -g -o comparar_strings
+```
+
+Para ejecutar:
+```bash
+./comparar_strings
+```
+
+### Resultados y Análisis
+
+Al ejecutar el programa, se muestran estadísticas detalladas sobre:
+- Cuántas veces la implementación con char* fue más rápida
+- Cuántas veces la implementación con string fue más rápida
+- Ejemplos de tiempos reales de ejecución para cada método
+- Conclusiones sobre qué enfoque es generalmente más eficiente
+
+El ejercicio demuestra las diferencias de rendimiento entre:
+1. Tipos de datos diferentes (string vs char*)
+2. Procesamiento en tiempo de compilación vs tiempo de ejecución
+
+La expectativa teórica es que los char* sean más eficientes debido a su acceso directo a memoria, sin la sobrecarga de las funciones miembro y estructuras de datos de string. El programa verifica empíricamente si esta hipótesis se cumple en la práctica.
+
+### Estructura del Proyecto
+
+- **comparar_recursion.h**: Contiene las declaraciones de funciones y prototipos
+- **comparar_recursion.cpp**: Implementa las funciones de comparación y pruebas
+- **main.cpp**: Coordina la ejecución de las pruebas
