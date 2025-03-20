@@ -8,7 +8,7 @@
 ## Indice 
 
 <div style="text-align: right; position: absolute; top: 20px; right: 20px;">
-    <img src="udesa.logo.jpg" alt="UDESA Logo" width="150">
+    <img src="udesa-logo.jpg" alt="UDESA Logo" width="150">
 </div>
 
 - [Ejercicio 1: Matrices](#ejercicio-1-matrices)
