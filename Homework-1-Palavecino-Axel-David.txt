@@ -1,0 +1,37 @@
+==============================================================
+PARADIGMAS DE PROGRAMACIÓN - UNIVERSIDAD DE SAN ANDRÉS - 2025
+==============================================================
+
+HOMEWORK 1
+ALUMNO: Axel David Palavecino
+LEGAJO: 36778
+
+==============================================================
+REPOSITORIO DE GITHUB:
+https://github.com/AxelPalavecino/Homework-1-PdP.git
+==============================================================
+
+CONTENIDO DEL TRABAJO:
+
+Ejercicio 1: Matrices
+- Implementación de operaciones con matrices usando memoria dinámica
+- Funciones para crear, llenar, imprimir y eliminar matrices
+
+Ejercicio 2: Sistema de Log
+- Sistema de registro que documenta diferentes tipos de eventos
+- Implementación de sobrecarga de funciones para distintos tipos de mensajes
+
+Ejercicio 3: Listas Enlazadas
+- Implementación de lista simplemente enlazada usando punteros inteligentes
+- Operaciones como inserción y eliminación de elementos
+
+Ejercicio 4: Comparación de Strings
+- Análisis de eficiencia en la comparación recursiva de strings
+- Comparación entre tiempo de ejecución y tiempo de compilación
+
+==============================================================
+Para clonar el repositorio:
+git clone https://github.com/AxelPalavecino/Homework-1-PdP.git
+
+Instrucciones detalladas de compilación y ejecución en el README.md, opcionalmente tambien se encuentra la opcion de .pdf
+==============================================================

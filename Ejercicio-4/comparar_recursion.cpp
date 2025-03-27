@@ -211,3 +211,7 @@ void test_comparate() {
         cout << "Las cadenas son diferentes" << endl;
     }
 }
+
+// CONCLUSIÓN
+
+// La diferencia de tiempo entre la ejecución en tiempo de compilación y en tiempo de ejecución es que en tiempo de compilación se realiza la comparación de los textos en tiempo de compilación, mientras que en tiempo de ejecución se realiza la comparación de los textos en tiempo de ejecución. Por lo tanto, la ejecución en tiempo de compilación es más rápida que la ejecución en tiempo de ejecución porque se realiza la comparación de los textos en tiempo de compilación. Por lo tanto, la ejecución en tiempo de compilación es más rápida que la ejecución en tiempo de ejecución. 
